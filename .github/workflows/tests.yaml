@@ -551,7 +551,7 @@ jobs:
                   github-token: ${{ secrets.GITHUB_TOKEN }}
             - name: Save ccache
               if: github.ref == 'refs/heads/master' && env.DISABLE_CCACHE != 'true'
-              uses: actions/cache/save@v5
+              uses: actions/cache/save@v6
               with:
                   path: .ccache
                   key: ${{ env.CCACHE_KEY }}
@@ -763,7 +763,7 @@ jobs:
                   github-token: ${{ secrets.GITHUB_TOKEN }}
             - name: Save ccache
               if: github.ref == 'refs/heads/master' && env.DISABLE_CCACHE != 'true'
-              uses: actions/cache/save@v5
+              uses: actions/cache/save@v6
               with:
                   path: .ccache
                   key: ${{ env.CCACHE_KEY }}
@@ -1022,7 +1022,7 @@ jobs:
                   github-token: ${{ secrets.GITHUB_TOKEN }}
             - name: Save ccache
               if: github.ref == 'refs/heads/master' && env.DISABLE_CCACHE != 'true'
-              uses: actions/cache/save@v5
+              uses: actions/cache/save@v6
               with:
                   path: .ccache
                   key: ${{ env.CCACHE_KEY }}
